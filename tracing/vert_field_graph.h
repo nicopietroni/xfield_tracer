@@ -1433,7 +1433,7 @@ void SplitAdjacentSingularities(MeshType &mesh)
     typedef std::pair<CoordType,CoordType> CoordPair;
 
     // Basic subdivision class
-    struct SplitLev : public   std::unary_function<vcg::face::Pos<FaceType> ,CoordType >
+    struct SplitLev
     {
         std::map<CoordPair,CoordType> *SplitOps;
 

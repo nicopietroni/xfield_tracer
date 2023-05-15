@@ -43,7 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 // Basic subdivision class
 template<class MESH_TYPE>
-struct SplitLevTrace : public   std::unary_function<vcg::face::Pos<typename MESH_TYPE::FaceType> ,  typename MESH_TYPE::CoordType >
+struct SplitLevTrace
 {
     typedef typename MESH_TYPE::VertexType VertexType;
     typedef typename MESH_TYPE::FaceType FaceType;
