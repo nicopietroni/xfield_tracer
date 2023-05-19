@@ -38,8 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #define EPS 0.000001
 
 template<class MeshType>
-class SelMidPointFunctor : public std::unary_function<vcg::face::Pos<typename MeshType::FaceType> ,
-        typename MeshType::CoordType>
+class SelMidPointFunctor
 {
     typedef MeshType TriMeshType;
     typedef typename TriMeshType::CoordType    CoordType;
