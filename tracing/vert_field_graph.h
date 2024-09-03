@@ -1350,7 +1350,7 @@ public:
             std::vector<NeighInfo> SwapNeigh;
             for (size_t j=0;j<Nodes[i].Neigh.size();j++)
             {
-                if (IndexNodes.count(Nodes[i].Neigh[j].Node>0))continue;
+                if (IndexNodes.count(Nodes[i].Neigh[j].Node)>0)continue;
                 SwapNeigh.push_back(Nodes[i].Neigh[j]);
             }
             if (SwapNeigh.size()==Nodes[i].Neigh.size())continue;
@@ -1433,7 +1433,7 @@ void SplitAdjacentSingularities(MeshType &mesh)
     typedef std::pair<CoordType,CoordType> CoordPair;
 
     // Basic subdivision class
-    struct SplitLev : public   std::unary_function<vcg::face::Pos<FaceType> ,CoordType >
+    struct SplitLev
     {
         std::map<CoordPair,CoordType> *SplitOps;
 
